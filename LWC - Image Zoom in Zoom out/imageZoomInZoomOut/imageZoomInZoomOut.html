@@ -1,0 +1,26 @@
+<!--
+@description       : 
+@author            : Rudra Karmakar
+@group             : 
+@last modified on  : 10-11-2022
+@last modified by  : Rudra Karmakar
+-->
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_xxx-small">
+                <template if:true={isImagePresent}>
+                    <div class="slds-align_absolute-center">
+                        <div class="frame">
+                            <img data-id="divblock" class="image" src ={imageURL}>
+                        </div>
+                    </div>
+    
+                    <!-- Zooming Section -->
+                    <div class="slds-align_absolute-center">
+                        <lightning-button-icon icon-name="utility:zoomin"  onclick={zoomIn} alternative-text="Zoom in"  class="slds-m-left_xx-small" title="Zoom in"></lightning-button-icon>
+                        <lightning-button-icon icon-name="utility:zoomout" onclick={zoomOut} alternative-text="Zoom out" class="slds-m-left_xx-small" title="Zoom out"></lightning-button-icon>
+                    </div>
+                </template>
+            </div>
+    </lightning-card>
+</template>
